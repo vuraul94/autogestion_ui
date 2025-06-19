@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="94"
+   height="30"
+   viewBox="0 0 94 30"
+   fill="none"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="logo-menu.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16">
+    <rect
+       x="0.47098698"
+       y="1.1774674"
+       width="92.548941"
+       height="28.023725"
+       id="rect16" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.2464019"
+     inkscape:cx="24.138083"
+     inkscape:cy="-5.06311"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <text
+     xml:space="preserve"
+     id="text16"
+     style="font-size:16px;font-family:'Patua One';-inkscape-font-specification:'Patua One';white-space:pre;shape-inside:url(#rect16);fill:#2b0000;stroke-width:5.53701"
+     transform="matrix(1.9178477,0,0,1.9178477,13.81603,-8.1670873)"><tspan
+       x="0.47070312"
+       y="15.935733"
+       id="tspan1">Logo</tspan></text>
+</svg>

@@ -1,0 +1,23 @@
+@layer components {
+
+  .select {
+    @apply w-full cursor-pointer bg-white rounded-full border border-dark py-2 px-4 text-xs appearance-none bg-[center_right_20px] bg-[length:10px_10px] bg-no-repeat focus:outline-none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDE0IDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNyA3TDEzIDEiIHN0cm9rZT0iIzNBM0EzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+Cg==');
+
+    &--main {
+      @apply select card shadow bg-light-4 border-0 text-dark-3 font-bold h-12 justify-center pr-10;
+    }
+  }
+
+  .select--with-icon {
+    @apply relative flex items-center;
+
+    svg {
+      @apply absolute top-1/2 left-4 text-dark-3 -translate-y-1/2;
+    }
+
+    .select, .select--main {
+      @apply pl-10;
+    }
+  }
+}

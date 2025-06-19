@@ -1,0 +1,51 @@
+@layer components {
+    input{
+      @apply font-inter;
+    }
+    input:not([type='checkbox'],[type='submit']) {
+      @apply px-4 py-2 border font-semibold focus:outline-none transition-colors duration-300 appearance-none w-full;
+      @apply rounded-xxl;
+      @apply bg-white text-dark border-dark-4;
+
+      &:focus {
+        border-color: var(--color-main);
+      }
+
+      &:disabled {
+        @apply bg-light text-dark-4 cursor-not-allowed;
+      }
+
+      &::placeholder {
+        @apply text-dark-3;
+      }
+    }
+
+    .input--with-icon{
+      @apply relative;
+
+      i, svg{
+        position: absolute;
+        @apply text-main absolute right-4 top-1/2 -translate-y-1/2 text-xl font-black pointer-events-none;
+      }
+    }
+
+    .input--with-icon-left{
+      @apply relative;
+
+      input{
+        @apply pl-10;
+      }
+
+      i, svg{
+        position: absolute;
+        @apply text-main absolute left-4 top-1/2 -translate-y-1/2 text-xl font-black pointer-events-none;
+      }
+    }
+
+    .input--with-icon-gray{
+      i, svg{
+        position: absolute;
+        @apply text-dark-3;
+      }
+    }
+  }

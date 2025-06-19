@@ -1,0 +1,14 @@
+@layer components {
+  $variants: 'main', 'dark-2', 'info', 'success', 'warning', 'error';
+
+  .icon-pill {
+    @apply p-2 w-10 h-10 bg-dark-2 text-white rounded-lg flex items-center justify-center;
+
+    @each $variant in $variants {
+
+      &--#{$variant} {
+        @apply icon-pill bg-#{$variant} #{!important};
+      }
+    }
+  }
+}

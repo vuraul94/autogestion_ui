@@ -1,0 +1,75 @@
+@layer components {
+  .table-container{
+    @apply card w-full lg:w-max min-w-full max-w-full overflow-auto;
+  }
+  table {
+    @apply w-full lg:w-max max-w-full lg:max-w-max min-w-full border-collapse;
+
+    th,
+    td {
+      @apply text-dark border-dark-2 font-mulish;
+    }
+
+    th {
+      @apply text-dark-3 font-inter;
+    }
+
+    tr {
+      @apply hover:bg-light relative pt-6 after:content-[''];
+
+      &:last-of-type {
+        @apply border-none;
+      }
+
+      &::after {
+        @apply flex bg-light w-[96%] h-px absolute bottom-0 left-1/2  -translate-x-1/2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      thead {
+        @apply table-header-group;
+      }
+
+      tbody {
+        @apply table-row-group;
+      }
+
+      th,
+      td {
+        @apply py-4 text-left whitespace-normal pl-8;
+        &:last-of-type{
+          @apply pr-8;
+        }
+      }
+      
+    }
+
+    @media (max-width: 1024px) {
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        @apply block;
+      }
+
+      thead {
+        @apply hidden;
+      }
+
+      td {
+        @apply flex justify-between p-4 py-6 mt-4 relative text-left before:content-[attr(data-label)] general-title;
+        &::before {
+          @apply absolute -top-2 text-dark-3 font-mulish font-normal;
+        }
+
+        &:last-child {
+          @apply border-b-0;
+        }
+
+      }
+    }
+  }
+}

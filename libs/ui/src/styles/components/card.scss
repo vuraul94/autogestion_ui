@@ -1,0 +1,26 @@
+@layer components {
+  $variants: 'main', 'dark-2', 'info', 'success', 'warning', 'error';
+
+  .card {
+    @apply bg-white rounded-2xl flex flex-col border border-light shadow-xl;
+
+    @each $variant in $variants {
+
+      &--#{$variant} {
+        @apply card bg-#{$variant} text-white;
+
+        .card__footer {
+          @apply border-light/20;
+        }
+      }
+    }
+
+    &__content {
+      @apply py-5 px-7 flex-1;
+    }
+
+    &__footer {
+      @apply px-4 py-2 border-t border-light;
+    }
+  }
+}

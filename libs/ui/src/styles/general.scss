@@ -1,0 +1,123 @@
+/*
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html{
+  @apply font-inter;
+}
+.main-container{
+  @apply p-10 flex flex-col items-start content-center gap-10 font-inter;
+
+  section{
+    @apply w-full;
+  }
+  .general-title{
+    @apply font-bold text-base text-dark font-inter;
+  }
+  .special-title{
+    @apply font-bold text-lg text-main font-inter;
+  }
+  .general-subtitle{
+    @apply font-bold text-base text-dark;
+  }
+  .general-text{
+    @apply text-base text-dark-2 font-mulish;
+  }
+
+  /* Estilos de Paginas Home y Profile*/
+  &__card{
+    @apply md:card md:p-4 xl:p-10 w-full;
+  }
+  &__header{
+    @apply border-b border-light;
+    h2{
+      @apply text-main font-bold text-base pb-3 pl-2;
+    }
+    &::after {
+      @apply block w-28 h-0.5 bg-main relative bottom-0 left-0;
+      content: '';
+    }
+  }
+}
+
+.submenu-container{
+  @apply flex gap-10 overflow-auto max-w-[100vw] p-10 pb-0 font-mulish;
+  &__item{
+    @apply btn--small btn--main whitespace-nowrap font-semibold;
+  }
+}
+label{
+  @apply text-base text-dark-2 mb-2 inline-block font-mulish;
+}
+.filter-form{
+  input, select{
+    @apply border-dark-4 text-base text-dark-2 font-normal #{!important};
+  }
+}
+.input-form{
+  input, select{
+    @apply border-dark-4 text-base text-dark-2 font-bold;
+  }
+}
+
+/*Validators*/
+.error-message{
+  @apply text-error text-sm font-inter;
+}
+

@@ -1,0 +1,29 @@
+// General Styles
+@import "general.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("@fortawesome/fontawesome-free/css/all.min.css");
+// Components
+@import "components/button";
+@import "components/card";
+@import "components/select";
+@import "components/icon-pill";
+@import "components/table";
+@import "components/alert";
+@import "components/input";
+@import "components/textarea";
+
+
+@layer base {
+  html, body, #root {
+    @apply h-full min-h-full font-inter;
+  }
+}
+
+:root {
+  --color-main: #3377FF;
+  --color-second: #F24F4F;
+  --color-third: #FFB31F;
+  --color-fourth: #81B44D;
+}

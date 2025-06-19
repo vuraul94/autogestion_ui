@@ -1,0 +1,18 @@
+@layer components {
+  textarea{
+    @apply font-inter px-4 py-2 border border-dark-4 text-base text-dark-2 font-normal rounded-3xl h-44 focus:outline-none transition-colors duration-300 appearance-none w-full;
+
+    &:focus {
+      border-color: var(--color-main);
+    }
+
+    &:disabled {
+      @apply bg-light text-dark-4 cursor-not-allowed;
+    }
+
+    &::placeholder {
+      @apply text-dark-3;
+    }
+  }
+}
+

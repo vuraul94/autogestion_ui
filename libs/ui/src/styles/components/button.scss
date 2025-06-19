@@ -1,0 +1,46 @@
+@layer components {
+  $variants: 'main', 'info', 'success', 'warning', 'error';
+
+  .btn {
+    @apply py-[14px] px-[32px] bg-light-2 text-dark rounded-full transition-all duration-200 ease-in-out;
+
+    &:hover {
+      @apply opacity-50;
+    }
+
+    &:focus {
+      @apply outline-2 outline-offset-1;
+    }
+
+    &:active {
+      @apply opacity-100 brightness-[80%];
+    }
+
+    &[disabled] {
+      @apply opacity-50 text-opacity-20 ;
+    }
+
+    &.btn--small {
+      @apply py-[12px] px-[24px] text-sm;
+    }
+
+    &.btn--large {
+      @apply py-[16px] px-[48px] text-lg;
+    }
+
+    &.btn--outline {
+      @apply bg-transparent border-dark border;
+    }
+
+    @each $variant in $variants {
+
+      &--#{$variant} {
+        @apply btn bg-#{$variant} text-white #{!important};
+
+        &.btn--outline {
+          @apply bg-transparent border-#{$variant} text-#{$variant} border #{!important};
+        }
+      }
+    }
+  }
+}

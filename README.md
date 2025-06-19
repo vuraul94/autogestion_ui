@@ -1,63 +1,50 @@
-Este proyecto utiliza **Vue 3**, **React**, y **NX** para gestionar el frontend. Incluye soporte para **Storybook** y herramientas de desarrollo como **ESLint**, **Prettier**, y **Tailwind CSS**.
+# Project Overview
 
-Requisitos Previos
-------------------
+This project uses **Vue 3**, **React**, and **NX** to manage the frontend. It includes support for **Storybook** and development tools like **ESLint**, **Prettier**, and **Tailwind CSS**.
 
--   **Node.js** (versión recomendada: >= 18)
--   **npm** (instalado con Node.js)
--   **NX CLI** (opcional pero recomendado)
+## Prerequisites
 
-Para instalar NX CLI de manera global (opcional):
+- **Node.js** (recommended version: >= 18)  
+- **npm** (comes with Node.js)  
+- **NX CLI** (optional but recommended)
 
-`npm install -g nx`
+To install NX CLI globally (optional):
 
-Instalación
------------
+```bash
+npm install -g nx
+```
 
-Para instalar todas las dependencias del proyecto, ejecuta el siguiente comando:
+## Installation
 
-`npm install`
+To install all project dependencies, run:
 
-Esto instalará todas las dependencias incluidas en `package.json`, tanto las de producción como las de desarrollo.
+```bash
+npm install
+```
 
-Scripts disponibles
--------------------
+This will install all production and development dependencies listed in `package.json`.
 
-A continuación, se listan algunos de los scripts más importantes que puedes utilizar en este proyecto.
+## Available Scripts
 
-### 1\. Servir el Frontend
+Here are some of the most relevant scripts you can use in this project.
 
-Para levantar el servidor de desarrollo del frontend, ejecuta:
+### 1. Start Storybook
 
-`npm run frontend:serve`
+To launch Storybook and view your UI components in an isolated environment, run:
 
-Este comando inicia el servidor de desarrollo del frontend utilizando **NX**. El servidor estará disponible localmente, y podrás hacer cambios en tiempo real.
+```bash
+npm run ui:storybook
+```
 
-### 2\. Ejecutar pruebas del Frontend
+This command will start **Storybook**, and you'll be able to browse the UI components in your browser.
 
-Para ejecutar las pruebas del frontend:
+## Additional Notes
 
-`npm run frontend:test`
+This project uses several third-party libraries including:
 
-Este comando ejecuta las pruebas configuradas para el frontend.
+- **FontAwesome** for icons  
+- **Tailwind CSS** for styling  
+- **Vite** for application bundling  
+- **Vitest** for unit testing  
 
-### 3\. Iniciar Storybook
-
-Para levantar Storybook y ver tus componentes de UI en un entorno aislado, ejecuta:
-
-`npm run ui:storybook`
-
-Este comando iniciará **Storybook**, y podrás visualizar la interfaz de usuario en un navegador.
-
-
-Notas adicionales
------------------
-
-Este proyecto utiliza varias bibliotecas de terceros como:
-
--   **FontAwesome** para los íconos.
--   **Tailwind CSS** para estilos.
--   **Vite** para el *bundling* de la aplicación.
--   **Vitest** para pruebas unitarias.
-
-Revisa los archivos de configuración como `nx.json`, `vite.config.js`, y `tailwind.config.js` para más información sobre la configuración de la infraestructura del proyecto.
+Refer to configuration files like `nx.json`, `vite.config.js`, and `tailwind.config.js` for more details on how the project infrastructure is set up.
